@@ -60,7 +60,7 @@ app.put("/repositories/:id", (request, response) => {
 
 app.delete("/repositories/:id", (request, response) => {
   // TODO
-  const { id } = request.params;
+  const { id } = request.params
   const repoId = repositories.findIndex(repo => repo.id === id)
 
   if (repoId < 0) {
